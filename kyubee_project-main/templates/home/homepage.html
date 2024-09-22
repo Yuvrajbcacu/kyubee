@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>KYUBEE Homepage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../static/assets/css/main.css" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href={{url_for('homepage')}}>KYUBEE</a> </h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="{{ url_for('homepage')}}">Home</a></li>
+							<li><a href="{{ url_for('generic') }}">About Us</a></li>
+							<li><a href="{{ url_for('contact_page') }}">Contact</a></li>
+							<li><a href="{{ url_for('login') }}" class="button">Sign In</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2><img src="../../static/images/logo.png" width="25%" height="15%" alt="logo" ></h2>
+					<ul class="actions special">
+						<li ><a href="{{ url_for('register')}}" class="button primary">Sign Up</a></li>
+						<li><a href="{{ url_for('generic') }}" class="button">Learn More</a></li>
+					</ul>
+				</section>
+
+			<!-- Main -->
+            <section id="main" class="container">
+
+                <section class="box special">
+                    <header class="major">
+                        <h2 style="color:black;"><b> Introducing the question bank website </b>
+                            <br />
+							<b>for generating papers with just one click</b></h2>
+                        <p>Generate question papers and practice well for your exams <br />
+                            with our one click paper generation button .</p>
+                    </header>
+					<img style="width:100%; height:auto;" src="../../static/images/something.png" alt="" />
+                </section>
+
+                <section class="box special features">
+                    <div class="features-row">
+                        <section>
+                            <span class="icon solid major fa-bolt accent2"></span>
+                            <h3>Generate Question Papers</h3>
+                            <p>Generate practice papers of how much you have studied and check your progress </p>
+                        </section>
+                        <section>
+                            <span class="icon solid major fa-chart-area accent3"></span>
+                            <h3>Get Notes</h3>
+                            <p>Get notes from teachers and use it to prepare well</p>
+                        </section>
+                    </div>
+                    <div class="features-row">
+                        <section>
+                            <span class="icon solid major fa-cloud accent4"></span>
+                            <h3>Pin Notes</h3>
+                            <p>Students can pin their notes and question papers that they require</p>
+                        </section>
+                        <section>
+                            <span class="icon solid major fa-lock accent5"></span>
+                            <h3>AI Generated Answers</h3>
+                            <p>Use GPT-Turbo-3.5 to generate answers for your own customized question papers</p>
+                        </section>
+                    </div>
+                </section>
+        </div>
+
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="../static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="../static/assets/js/browser.min.js"></script>
+			<script src="../static/assets/js/breakpoints.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+
+	</body>
+</html>
